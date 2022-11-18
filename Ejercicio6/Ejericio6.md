@@ -17,9 +17,13 @@ Los lenguajes utilizados son:
 - Rust
 - Lisp
 Para poder instalar los paquetes de los anteriores lenguajes debes hacer un:
+
   sudo apt-get update
+  
 Luego ya puedes instalar los paquetes de la siguinte forma:
+
   sudo apt-get install python3.6  php  nodejs  gcc  g++  openjdk-8-jdk  ruby  golang  rustc  clisp nasm
+  
   
 # Bash
 *"Hola Mundo"* en bash.
