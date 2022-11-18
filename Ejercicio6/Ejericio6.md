@@ -1,7 +1,7 @@
 # Ejecuta el programa "Hola mundo" en los siguientes lenguajes:
 En este documento especficaré las distintas formas de hacer el *"Hola Mundo"* en distintos lenguajes.
 
-Utiliza una máquina virtual en la que trabaje con **Linux**.
+Utilize una máquina virtual en la que trabaje con **Linux**.
 
 Los lenguajes utilizados son:
 - Bash
