@@ -16,6 +16,7 @@ Los lenguajes utilizados son:
 - Go
 - Rust
 - Lisp
+
 Para poder instalar los paquetes de los anteriores lenguajes debes hacer un:
 ~~~
 sudo apt-get update
