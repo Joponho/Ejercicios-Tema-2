@@ -27,4 +27,43 @@ Luego ya puedes instalar los paquetes de la siguinte forma:
  ---
 # Bash
 *"Hola Mundo"* en bash.
-El código de  
+
+La máquina virtual con la que trabajamos interpreta bash, por ello no debemos descargar ningún añadido para que pueda interpretar bash.
+
+Escribimos y ejecutamos el código para comprobar que es correcto.
+~~~
+echo "Hola Mundo"
+~~~
+
+---
+# Python
+
+---
+# PHP
+
+---
+# Javascript (nodejs)
+
+---
+# C
+
+---
+# C++
+
+---
+# Java
+
+---
+# Esamblador (nasm)
+
+---
+# Ruby
+
+---
+# Go
+
+---
+# Rust
+
+---
+# Lisp
