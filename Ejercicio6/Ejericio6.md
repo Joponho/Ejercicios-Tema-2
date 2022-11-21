@@ -35,6 +35,20 @@ Escribimos y ejecutamos el código para comprobar que es correcto.
 echo "Hola Mundo"
 ~~~
 
+## Ejecutar el programa
+1. Creamos un archivo .sh donde irá el código de *Hola Mundo*.
+~~~
+cat > HolaMundo.sh
+echo "Hola Mundo"
+~~~
+2. Damos lo permisos de ejecución al archivo *HolaMundo.sh*
+~~~
+chmod +x HolaMundo.sh
+~~~
+3. Ejecutamos el programa
+~~~
+./HolaMundo.sh
+~~~
 ---
 # Python
 
