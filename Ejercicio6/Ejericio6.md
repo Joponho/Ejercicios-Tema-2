@@ -27,4 +27,4 @@ Luego ya puedes instalar los paquetes de la siguinte forma:
   
 # Bash
 *"Hola Mundo"* en bash.
-El código
+El código de 
