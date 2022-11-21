@@ -24,7 +24,7 @@ Luego ya puedes instalar los paquetes de la siguinte forma:
  
     sudo apt-get install python3.6  php  nodejs  gcc  g++  openjdk-8-jdk  ruby  golang  rustc  clisp nasm
  
-  
+ ---
 # Bash
 *"Hola Mundo"* en bash.
 El código de  
