@@ -27,7 +27,7 @@ Luego ya puedes instalar los paquetes de la siguinte forma:
  
  ---
 # Bash
-*Hola Mundo* en bash.
+*Hola Mundo* en Bash.
 
 La máquina virtual con la que trabajamos interpreta bash, por ello no debemos descargar ningún añadido para que pueda interpretar bash.
 
@@ -53,9 +53,9 @@ chmod +x HolaMundo.sh
 ~~~
 ---
 # Python
-*Hola Mundo* en bash.
+*Hola Mundo* en Python.
 
-Para abrir el intérperte de python y probar el *Hola Mundo* tenemos escribir en la terminal
+Para abrir el intérperte de **Python** y probar el *"Hola Mundo"* tenemos escribir en la terminal
 ~~~
 python3
 ~~~
@@ -84,30 +84,254 @@ python3 ./HolaMundo.py
 ~~~
 ---
 # PHP
+*Hola Mundo* en PHP.
+Para abrir el interpetre de **PHP** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+~~~
+php -a
+~~~
+Para probar el programa escribimos:
+~~~
+echo "Hola Mundo";
+~~~
+>CTRL + D para salir del intérprete.
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.php** y escribimos el código:
+~~~
+<?php 
+  echo "Hola mundo"; 
+?>
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.php
+~~~
+3. Abrimos el intérprete y ejecutamos el programa:
+~~~
+php ./Holamundo.php
+~~~
 
 ---
-# Javascript (nodejs)
-
+# Javascript(nodejs)
+*Hola Mundo* en Javascript(nodejs).
+Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+~~~
+node
+~~~
+Para probar el programa escribimos:
+~~~
+console.log('Hola Mundo');
+~~~
+>CTRL + D para salir del intérprete.
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+~~~
+console.log('Hola Mundo');
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.js
+~~~
+3. Abrimos el intérprete y ejecutamos el programa:
+~~~
+node ./Holamundo.js
+~~~
 ---
 # C
-
+*Hola Mundo* en Javascript(nodejs).
+Para abrir el interpetre de **C** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+~~~
+gcc
+~~~
+Para probar el programa escribimos:
+~~~
+console.log('Hola Mundo');
+~~~
+>CTRL + D para salir del intérprete.
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.c** y escribimos el código:
+~~~
+console.log('Hola Mundo');
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.c
+~~~
+3. Abrimos el intérprete y ejecutamos el programa:
+~~~
+gcc ./Holamundo.c
+~~~
 ---
 # C++
-
+*Hola Mundo* en Javascript(nodejs).
+Para abrir el interpetre de **C++** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+~~~
+g++
+~~~
+Para probar el programa escribimos:
+~~~
+console.log('Hola Mundo');
+~~~
+>CTRL + D para salir del intérprete.
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.cpp** y escribimos el código:
+~~~
+console.log('Hola Mundo');
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.cpp
+~~~
+3. Abrimos el intérprete y ejecutamos el programa:
+~~~
+g++ ./Holamundo.cpp
+~~~
 ---
 # Java
-
+*Hola Mundo* en Javascript(nodejs).
+Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+~~~
+node
+~~~
+Para probar el programa escribimos:
+~~~
+console.log('Hola Mundo');
+~~~
+>CTRL + D para salir del intérprete.
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+~~~
+console.log('Hola Mundo');
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.js
+~~~
+3. Abrimos el intérprete y ejecutamos el programa:
+~~~
+node ./Holamundo.js
+~~~
 ---
 # Esamblador (nasm)
-
+*Hola Mundo* en Javascript(nodejs).
+Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+~~~
+node
+~~~
+Para probar el programa escribimos:
+~~~
+console.log('Hola Mundo');
+~~~
+>CTRL + D para salir del intérprete.
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+~~~
+console.log('Hola Mundo');
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.js
+~~~
+3. Abrimos el intérprete y ejecutamos el programa:
+~~~
+node ./Holamundo.js
+~~~
 ---
 # Ruby
-
+*Hola Mundo* en Javascript(nodejs).
+Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+~~~
+node
+~~~
+Para probar el programa escribimos:
+~~~
+console.log('Hola Mundo');
+~~~
+>CTRL + D para salir del intérprete.
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+~~~
+console.log('Hola Mundo');
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.js
+~~~
+3. Abrimos el intérprete y ejecutamos el programa:
+~~~
+node ./Holamundo.js
+~~~
 ---
 # Go
-
+*Hola Mundo* en Javascript(nodejs).
+Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+~~~
+node
+~~~
+Para probar el programa escribimos:
+~~~
+console.log('Hola Mundo');
+~~~
+>CTRL + D para salir del intérprete.
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+~~~
+console.log('Hola Mundo');
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.js
+~~~
+3. Abrimos el intérprete y ejecutamos el programa:
+~~~
+node ./Holamundo.js
+~~~
 ---
 # Rust
-
+*Hola Mundo* en Javascript(nodejs).
+Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+~~~
+node
+~~~
+Para probar el programa escribimos:
+~~~
+console.log('Hola Mundo');
+~~~
+>CTRL + D para salir del intérprete.
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+~~~
+console.log('Hola Mundo');
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.js
+~~~
+3. Abrimos el intérprete y ejecutamos el programa:
+~~~
+node ./Holamundo.js
+~~~
 ---
 # Lisp
+*Hola Mundo* en Javascript(nodejs).
+Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+~~~
+node
+~~~
+Para probar el programa escribimos:
+~~~
+console.log('Hola Mundo');
+~~~
+>CTRL + D para salir del intérprete.
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+~~~
+console.log('Hola Mundo');
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.js
+~~~
+3. Abrimos el intérprete y ejecutamos el programa:
+~~~
+node ./Holamundo.js
+~~~
