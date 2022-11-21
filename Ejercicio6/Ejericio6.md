@@ -42,7 +42,7 @@ echo "Hola Mundo"
 cat > HolaMundo.sh
 echo "Hola Mundo"
 ~~~
-_CTRL + D para salir del cat.
+>CTRL + D para salir del cat.
 2. Damos lo permisos de ejecución al archivo *HolaMundo.sh*
 ~~~
 chmod +x HolaMundo.sh
