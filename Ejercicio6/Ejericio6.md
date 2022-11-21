@@ -137,58 +137,53 @@ node ./Holamundo.js
 ~~~
 ---
 # C
-*Hola Mundo* en Javascript(nodejs).
-Para abrir el interpetre de **C** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
-~~~
-gcc
-~~~
-Para probar el programa escribimos:
-~~~
-console.log('Hola Mundo');
-~~~
->CTRL + D para salir del intérprete.
+*Hola Mundo* en C.
 ## Ejecutar el programa
 1. Creamos un archivo de texto llamado **HolaMundo.c** y escribimos el código:
 ~~~
-console.log('Hola Mundo');
+#include <stdio.h>
+int main
+{
+printf("Hola Mundo");
+return 0;
+}
 ~~~
-2. Le damos los permisos al programa:
+2. Compilamos y enlazamos:
 ~~~
-chmod +x HolaMundo.c
+gcc -o HolaMundo HolaMundo.c
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-gcc ./Holamundo.c
+gcc ./Holamundo
 ~~~
+< También podemos ejecutarlo sin abrir el programa.
 ---
 # C++
-*Hola Mundo* en Javascript(nodejs).
-Para abrir el interpetre de **C++** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
-~~~
-g++
-~~~
-Para probar el programa escribimos:
-~~~
-console.log('Hola Mundo');
-~~~
->CTRL + D para salir del intérprete.
+*Hola Mundo* en C++.
 ## Ejecutar el programa
 1. Creamos un archivo de texto llamado **HolaMundo.cpp** y escribimos el código:
 ~~~
-console.log('Hola Mundo');
+#include <iostream>
+using namespace std;
+int main()
+{
+cout << "Hola Mundo" << endl;
+return 0;
+}
 ~~~
-2. Le damos los permisos al programa:
+2. Compilamos y enlazamos:
 ~~~
-chmod +x HolaMundo.cpp
+g++ -o HolaMundo Holamundo.cpp
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-g++ ./Holamundo.cpp
+g++ ./Holamundo
 ~~~
+< También podemos ejecutarlo sin abrir el intérprete.
 ---
 # Java
 *Hola Mundo* en Javascript(nodejs).
-Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+Para abrir el interpetre de **Java** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
 ~~~
@@ -198,22 +193,22 @@ console.log('Hola Mundo');
 ~~~
 >CTRL + D para salir del intérprete.
 ## Ejecutar el programa
-1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+1. Creamos un archivo de texto llamado **HolaMundo.java** y escribimos el código:
 ~~~
 console.log('Hola Mundo');
 ~~~
 2. Le damos los permisos al programa:
 ~~~
-chmod +x HolaMundo.js
+chmod +x HolaMundo.java
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-node ./Holamundo.js
+node ./Holamundo.java
 ~~~
 ---
-# Esamblador (nasm)
+# Esamblador(nasm)
 *Hola Mundo* en Javascript(nodejs).
-Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+Para abrir el interpetre de **Esamblador(nasm)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
 ~~~
@@ -223,22 +218,22 @@ console.log('Hola Mundo');
 ~~~
 >CTRL + D para salir del intérprete.
 ## Ejecutar el programa
-1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+1. Creamos un archivo de texto llamado **HolaMundo.asm** y escribimos el código:
 ~~~
 console.log('Hola Mundo');
 ~~~
 2. Le damos los permisos al programa:
 ~~~
-chmod +x HolaMundo.js
+chmod +x HolaMundo.asm
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-node ./Holamundo.js
+node ./Holamundo.asm
 ~~~
 ---
 # Ruby
 *Hola Mundo* en Javascript(nodejs).
-Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+Para abrir el interpetre de **Ruby** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
 ~~~
@@ -248,22 +243,22 @@ console.log('Hola Mundo');
 ~~~
 >CTRL + D para salir del intérprete.
 ## Ejecutar el programa
-1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+1. Creamos un archivo de texto llamado **HolaMundo.rb** y escribimos el código:
 ~~~
 console.log('Hola Mundo');
 ~~~
 2. Le damos los permisos al programa:
 ~~~
-chmod +x HolaMundo.js
+chmod +x HolaMundo.rb
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-node ./Holamundo.js
+node ./Holamundo.rb
 ~~~
 ---
 # Go
 *Hola Mundo* en Javascript(nodejs).
-Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+Para abrir el interpetre de **Go** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
 ~~~
@@ -273,22 +268,22 @@ console.log('Hola Mundo');
 ~~~
 >CTRL + D para salir del intérprete.
 ## Ejecutar el programa
-1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+1. Creamos un archivo de texto llamado **HolaMundo.go** y escribimos el código:
 ~~~
 console.log('Hola Mundo');
 ~~~
 2. Le damos los permisos al programa:
 ~~~
-chmod +x HolaMundo.js
+chmod +x HolaMundo.go
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-node ./Holamundo.js
+node ./Holamundo.go
 ~~~
 ---
 # Rust
 *Hola Mundo* en Javascript(nodejs).
-Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+Para abrir el interpetre de **Rust** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
 ~~~
@@ -298,22 +293,22 @@ console.log('Hola Mundo');
 ~~~
 >CTRL + D para salir del intérprete.
 ## Ejecutar el programa
-1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+1. Creamos un archivo de texto llamado **HolaMundo.rs** y escribimos el código:
 ~~~
 console.log('Hola Mundo');
 ~~~
 2. Le damos los permisos al programa:
 ~~~
-chmod +x HolaMundo.js
+chmod +x HolaMundo.rs
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-node ./Holamundo.js
+node ./Holamundo.rs
 ~~~
 ---
 # Lisp
 *Hola Mundo* en Javascript(nodejs).
-Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
+Para abrir el interpetre de **Lisp** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
 ~~~
@@ -323,15 +318,15 @@ console.log('Hola Mundo');
 ~~~
 >CTRL + D para salir del intérprete.
 ## Ejecutar el programa
-1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
+1. Creamos un archivo de texto llamado **HolaMundo.lisp** y escribimos el código:
 ~~~
 console.log('Hola Mundo');
 ~~~
 2. Le damos los permisos al programa:
 ~~~
-chmod +x HolaMundo.js
+chmod +x HolaMundo.lisp
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-node ./Holamundo.js
+node ./Holamundo.lisp
 ~~~
