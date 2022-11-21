@@ -18,7 +18,7 @@ Los lenguajes utilizados son:
 - Lisp
 Para poder instalar los paquetes de los anteriores lenguajes debes hacer un:
 
-        sudo apt-get update
+    sudo apt-get update
   
 Luego ya puedes instalar los paquetes de la siguinte forma:
  
