@@ -27,7 +27,7 @@ Luego ya puedes instalar los paquetes de la siguinte forma:
  
  ---
 # Bash
-*"Hola Mundo"* en bash.
+*Hola Mundo* en bash.
 
 La máquina virtual con la que trabajamos interpreta bash, por ello no debemos descargar ningún añadido para que pueda interpretar bash.
 
@@ -37,7 +37,7 @@ echo "Hola Mundo"
 ~~~
 
 ## Ejecutar el programa
-1. Creamos un archivo .sh donde irá el código de *Hola Mundo*.
+1. Creamos un archivo **.sh** donde irá el código de *Hola Mundo*.
 ~~~
 cat > HolaMundo.sh
 echo "Hola Mundo"
@@ -53,7 +53,35 @@ chmod +x HolaMundo.sh
 ~~~
 ---
 # Python
+*Hola Mundo* en bash.
 
+Para abrir el intérperte de python y probar el *Hola Mundo* tenemos escribir en la terminal
+~~~
+python3
+~~~
+
+Luego escribimos el programa para probarlo:
+~~~
+print("Hola Mundo")
+~~~
+>CTRL + D para salir del intérprete.
+
+
+## Ejecutar el programa
+1. Creamos un archivo de texto llamado **HolaMundo.py** y escribimos el código:
+~~~
+cat > HolaMundo.py
+
+print("Hola Mundo")
+~~~
+2. Le damos los permisos al programa:
+~~~
+chmod +x HolaMundo.py
+~~~
+3. Abrimos el interprete y ejecutamos el programa:
+~~~
+python3 ./HolaMundo.py
+~~~
 ---
 # PHP
 
