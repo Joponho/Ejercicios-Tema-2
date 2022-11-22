@@ -195,7 +195,12 @@ console.log('Hola Mundo');
 ## Ejecutar el programa
 1. Creamos un archivo de texto llamado **HolaMundo.java** y escribimos el código:
 ~~~
-console.log('Hola Mundo');
+Main class Hola
+{
+    public static void main(String[] args) {
+        System.out.println("Hola Mundo");
+    }
+}
 ~~~
 2. Le damos los permisos al programa:
 ~~~
