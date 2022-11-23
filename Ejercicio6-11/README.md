@@ -29,7 +29,7 @@ Luego ya puedes instalar los paquetes de la siguinte forma:
  
  ---
 # Bash
-*Hola Mundo* en Bash.
+*"Hola Mundo"* en Bash.
 
 La máquina virtual con la que trabajamos interpreta bash, por ello no debemos descargar ningún añadido para que pueda interpretar bash.
 
@@ -39,7 +39,7 @@ echo "Hola Mundo"
 ~~~
 
 ## Ejecutar el programa
-1. Creamos un archivo **.sh** donde irá el código de *Hola Mundo*.
+1. Creamos un archivo **.sh** donde irá el código de *"Hola Mundo"*.
 ~~~
 cat > HolaMundo.sh
 echo "Hola Mundo"
@@ -55,7 +55,7 @@ chmod +x HolaMundo.sh
 ~~~
 ---
 # Python
-*Hola Mundo* en Python.
+*"Hola Mundo"* en Python.
 
 Para abrir el intérperte de **Python** y probar el *"Hola Mundo"* tenemos escribir en la terminal
 ~~~
@@ -86,7 +86,7 @@ python3 ./HolaMundo.py
 ~~~
 ---
 # PHP
-*Hola Mundo* en PHP.
+*"Hola Mundo"* en PHP.
 Para abrir el interpetre de **PHP** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 php -a
@@ -114,7 +114,7 @@ php ./Holamundo.php
 
 ---
 # Javascript(nodejs)
-*Hola Mundo* en Javascript(nodejs).
+*"Hola Mundo"* en Javascript(nodejs).
 Para abrir el interpetre de **Javascript(nodejs)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
@@ -139,7 +139,7 @@ node ./Holamundo.js
 ~~~
 ---
 # C
-*Hola Mundo* en C.
+*"Hola Mundo"* en C.
 ## Ejecutar el programa
 1. Creamos un archivo de texto llamado **HolaMundo.c** y escribimos el código:
 ~~~
@@ -184,7 +184,7 @@ g++ ./Holamundo
 < También podemos ejecutarlo sin abrir el intérprete.
 ---
 # Java
-*Hola Mundo* en Javascript(nodejs).
+*"Hola Mundo"* en Javascript(nodejs).
 Para abrir el interpetre de **Java** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 class HolaMundo
@@ -225,7 +225,7 @@ node ./Holamundo.java
 ~~~
 ---
 # Esamblador(nasm)
-*Hola Mundo* en Javascript(nodejs).
+*"Hola Mundo"* en Javascript(nodejs).
 Para abrir el interpetre de **Esamblador(nasm)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
@@ -250,7 +250,7 @@ node ./Holamundo.asm
 ~~~
 ---
 # Ruby
-*Hola Mundo* en Javascript(nodejs).
+*"Hola Mundo"* en Javascript(nodejs).
 Para abrir el interpetre de **Ruby** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
@@ -275,7 +275,7 @@ node ./Holamundo.rb
 ~~~
 ---
 # Go
-*Hola Mundo* en Javascript(nodejs).
+*"Hola Mundo"* en Javascript(nodejs).
 Para abrir el interpetre de **Go** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
@@ -300,7 +300,7 @@ node ./Holamundo.go
 ~~~
 ---
 # Rust
-*Hola Mundo* en Javascript(nodejs).
+*"Hola Mund"o* en Javascript(nodejs).
 Para abrir el interpetre de **Rust** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
@@ -325,7 +325,7 @@ node ./Holamundo.rs
 ~~~
 ---
 # Lisp
-*Hola Mundo* en Javascript(nodejs).
+*"Hola Mundo"* en Javascript(nodejs).
 Para abrir el interpetre de **Lisp** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
 node
