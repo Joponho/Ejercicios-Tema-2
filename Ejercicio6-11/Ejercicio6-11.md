@@ -185,17 +185,28 @@ g++ ./Holamundo
 *Hola Mundo* en Javascript(nodejs).
 Para abrir el interpetre de **Java** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
-node
+class HolaMundo
+{
+ public static void main (String[] args)
+ {
+  System.out.println("Hola Mundo");
+ }
+}
 ~~~
 Para probar el programa escribimos:
 ~~~
-console.log('Hola Mundo');
+javac HolaMundo.javac
 ~~~
+Para probar el programa escribimos:
+~~~
+java HolaMundo
+~~~
+> Nota: A la hora de ejecutar el programa tenemos que escribir el nombre de la clase para que se ejecute.
 >CTRL + D para salir del intérprete.
 ## Ejecutar el programa
 1. Creamos un archivo de texto llamado **HolaMundo.java** y escribimos el código:
 ~~~
-Main class Hola
+class HolaMundo
 {
     public static void main(String[] args) {
         System.out.println("Hola Mundo");
