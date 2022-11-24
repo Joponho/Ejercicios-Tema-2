@@ -253,17 +253,21 @@ node ./Holamundo.asm
 *"Hola Mundo"* en Javascript(nodejs).
 Para abrir el interpetre de **Ruby** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
 ~~~
-node
+ruby
 ~~~
 Para probar el programa escribimos:
 ~~~
-console.log('Hola Mundo');
+print "Hola Mundo"
 ~~~
+o
+~~~~
+puts "Hola Mundo"
+~~~~
 >CTRL + D para salir del intérprete.
 ## Ejecutar el programa
 1. Creamos un archivo de texto llamado **HolaMundo.rb** y escribimos el código:
 ~~~
-console.log('Hola Mundo');
+print "Hola Mundo
 ~~~
 2. Le damos los permisos al programa:
 ~~~
@@ -271,57 +275,68 @@ chmod +x HolaMundo.rb
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-node ./Holamundo.rb
+ruby ./Holamundo.rb
+~~~
+4. También nos podemos saltar el paso dos y hacer:
+~~~~
+ruby HolaMundo.rb
+~~~~
+5. Incluso podemos cambiar el código y poner:
+~~~~
+#!/usr/bin/env ruby
+puts "Hola Mundo"
+~~~~
+6. Le damos los permisos:
+~~~~
+chmod +x HolaMundo.rb
+~~~~
+7. Ejecutamos el programa:
+~~~
+./Holamundo.rb
 ~~~
 ---
 # Go
 *"Hola Mundo"* en Javascript(nodejs).
-Para abrir el interpetre de **Go** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
-~~~
-node
-~~~
-Para probar el programa escribimos:
-~~~
-console.log('Hola Mundo');
-~~~
->CTRL + D para salir del intérprete.
 ## Ejecutar el programa
 1. Creamos un archivo de texto llamado **HolaMundo.go** y escribimos el código:
 ~~~
-console.log('Hola Mundo');
+package main
+
+import "fmt"
+
+func main() {
+        fmt.Println("Hola mundo desde Go")
+}
 ~~~
-2. Le damos los permisos al programa:
+2. Compilamos y enlazamos:
 ~~~
-chmod +x HolaMundo.go
+go  build  hola.go
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-node ./Holamundo.go
+./Holamundo
 ~~~
+4. También podemos interpretar el código y ejecutarlos:
+~~~~
+go  run  hola.go
+~~~~
 ---
 # Rust
 *"Hola Mund"o* en Javascript(nodejs).
-Para abrir el interpetre de **Rust** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
-~~~
-node
-~~~
-Para probar el programa escribimos:
-~~~
-console.log('Hola Mundo');
-~~~
->CTRL + D para salir del intérprete.
 ## Ejecutar el programa
 1. Creamos un archivo de texto llamado **HolaMundo.rs** y escribimos el código:
 ~~~
-console.log('Hola Mundo');
+fn main() {
+    println!("¡Hola, mundo! Desde RUST ");
+}
 ~~~
-2. Le damos los permisos al programa:
+2. Compilamos y enlazamos:
 ~~~
-chmod +x HolaMundo.rs
+rustc  hola.rs 
 ~~~
-3. Abrimos el intérprete y ejecutamos el programa:
+3. Ejecutamos el programa:
 ~~~
-node ./Holamundo.rs
+./Holamundo
 ~~~
 ---
 # Lisp
@@ -338,13 +353,15 @@ console.log('Hola Mundo');
 ## Ejecutar el programa
 1. Creamos un archivo de texto llamado **HolaMundo.lisp** y escribimos el código:
 ~~~
-console.log('Hola Mundo');
+#!/usr/bin/env clisp
+(format t "¡Hola, mundo!")
 ~~~
+> Nota: Si no escribimos el *#!/usr/bin/env clisp* el programa no funcionará.
 2. Le damos los permisos al programa:
 ~~~
 chmod +x HolaMundo.lisp
 ~~~
-3. Abrimos el intérprete y ejecutamos el programa:
+3. Ejecutamos el programa:
 ~~~
-node ./Holamundo.lisp
+./Holamundo.lisp
 ~~~
