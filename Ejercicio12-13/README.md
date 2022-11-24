@@ -45,7 +45,7 @@ gcc -c main.c suma.c datos.c
 ~~~~
 **Deberemos obtener 3 archivos: main.o, suma.o y datos.o**
 
-# Lenguaje C. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:
+## Lenguaje C. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:
 ~~~~
 gcc -o program main.o datos.o suma.o
 ~~~~
