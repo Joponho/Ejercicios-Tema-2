@@ -41,9 +41,10 @@ Guardamos y compilamos los tres para obtener el código. Lo hacemos de la siguie
 ~~~~
 g++ -c main.cpp suma.cpp datos.cpp
 ~~~~
-Deberemos obtener 3 archivos: main.o, suma.o y datos.o
+**Deberemos obtener 3 archivos: main.o, suma.o y datos.o.**
 
 # Lenguaje C++. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:
+
 ~~~~
 g++ -o program main.o datos.o suma.o
 ~~~~
