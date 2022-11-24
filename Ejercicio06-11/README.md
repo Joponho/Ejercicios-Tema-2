@@ -250,12 +250,14 @@ node ./Holamundo.java
 ~~~
 2. Ensamblamos y enlazamos:
 ~~~
-nasm  -f  elf64  hola.asm   > Ensamblado
+nasm  -f  elf64  hola.asm   
 ~~~
-> Nos entrega un archivo en código objeo.
+> Nota: Ensamblado
+> Nota: Nos entrega un archivo en código objeo.
 ~~~~
-ld  hola.o  -o  hola        > Enlazado
+ld  hola.o  -o  hola       
 ~~~~
+> Nota: Enlazado
 3. Ejecutamos el programa:
 ~~~
 ./hola
