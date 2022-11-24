@@ -44,3 +44,21 @@ Lo hacemos de la siguiente manera:
 gcc -c main.c suma.c datos.c
 ~~~~
 **Deberemos obtener 3 archivos: main.o, suma.o y datos.o**
+
+# Lenguaje C. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:
+~~~~
+gcc -o program main.o datos.o suma.o
+~~~~
+
+## Deberemos obtener un archivo programa binario ejecutable. Si lo ejecutamos obtenemos el siguiente resultado:
+~~~~
+./program
+~~~~
+~~~~
+Hola a todos y todas
+18
+~~~~
+
+> Nota: Obtenemos el "Hola a todos y todas porque está declarado en datos.
+
+> Nota: Obtenemos el 18 porque en datos está declarado num1=8 y num2=10 y en suma que es una función que dice que *a *y b se suman y en el main se llama a la función suma y se declara que a es num1 y b es num2 lo que da por resultado 18.
