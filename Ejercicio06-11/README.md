@@ -212,9 +212,9 @@ Realmente no es un script, si no un bytecode empaquetado en JAR
 jar  cvfe  hola.jar  Hola  Hola.class
 ~~~~
 > Nota: De forma habitual se suele ejecutar un archivo .jar de la siguiente forma.
->> ~~~~
->>java  -jar   hola.jar
->>~~~~
+> ~~~~
+>java  -jar   hola.jar
+>~~~~
 2. Damos permiso de ejecución:
 ~~~~
 chmod  +x  hola.jar
