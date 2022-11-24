@@ -58,4 +58,4 @@ Hola a todos y todas
 ~~~~
 > Nota: Obtenemos el "Hola a todos y todas porque está declarado en datos.
 
-> Nota: Obtenemos el 18 porque en datos está declarado **num1**=8 y **num2**=10 y en suma que es una función que dice que *a *y **b** se suman y en el main se llama a la función suma y se declara que **a** es **num1** y **b** es **num2** lo que da por resultado 18.
+> Nota: Obtenemos el 18 porque en datos está declarado **num1**=8 y **num2**=10 y en suma que es una función que dice que **a** y **b** se suman y en el main se llama a la función suma y se declara que **a** es **num1** y **b** es **num2** lo que da por resultado 18.
