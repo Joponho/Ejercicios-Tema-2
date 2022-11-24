@@ -225,28 +225,40 @@ node ./Holamundo.java
 ~~~
 ---
 # Esamblador(nasm)
-*"Hola Mundo"* en Javascript(nodejs).
-Para abrir el interpetre de **Esamblador(nasm)** y poder probar el *"Hola Mundo"* tenemos que escribir en la terminal:
-~~~
-node
-~~~
-Para probar el programa escribimos:
-~~~
-console.log('Hola Mundo');
-~~~
->CTRL + D para salir del intérprete.
+*"Hola Mundo"* en Esamblador(nasm).
 ## Ejecutar el programa
 1. Creamos un archivo de texto llamado **HolaMundo.asm** y escribimos el código:
 ~~~
-console.log('Hola Mundo');
+ section .data
+ 
+ msg     db "¡Hola Mundo!", 0Ah
+ len     equ     $ - msg  
+ 
+ section .text
+ 
+ global _start
+ 
+ _start:
+        mov     eax, 04h
+        mov     ebx, 01h
+        mov     ecx, msg
+        mov     edx, len
+        int     80h
+        mov     eax, 01h
+        mov     ebx, 00h
+        int     80h
 ~~~
-2. Le damos los permisos al programa:
+2. Ensamblamos y enlazamos:
 ~~~
-chmod +x HolaMundo.asm
+nasm  -f  elf64  hola.asm   >Ensamblado
 ~~~
-3. Abrimos el intérprete y ejecutamos el programa:
+
+~~~~
+ld  hola.o  -o  hola        >Enlazado
+~~~~
+3. Ejecutamos el programa:
 ~~~
-node ./Holamundo.asm
+./hola
 ~~~
 ---
 # Ruby
