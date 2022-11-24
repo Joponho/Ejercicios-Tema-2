@@ -1,5 +1,3 @@
-# ¿Qué extensión tienen los archivos de código objeto?
-
 ## Lenguaje C. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:
 
 1. Primero tenemos que crear los archivos, empezaremos con el *main.c*:
