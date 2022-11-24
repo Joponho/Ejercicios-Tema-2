@@ -38,7 +38,7 @@ Escribimos y ejecutamos el código para comprobar que es correcto.
 echo "Hola Mundo"
 ~~~
 
-## Ejecutar el programa
+## Script ejecutable
 1. Creamos un archivo **.sh** donde irá el código de *"Hola Mundo"*.
 ~~~
 cat > HolaMundo.sh
@@ -69,7 +69,7 @@ print("Hola Mundo")
 >CTRL + D para salir del intérprete.
 
 
-## Ejecutar el programa
+## Script ejecutable
 1. Creamos un archivo de texto llamado **HolaMundo.py** y escribimos el código:
 ~~~
 cat > HolaMundo.py
@@ -96,7 +96,7 @@ Para probar el programa escribimos:
 echo "Hola Mundo";
 ~~~
 >CTRL + D para salir del intérprete.
-## Ejecutar el programa
+## Script ejecutable
 1. Creamos un archivo de texto llamado **HolaMundo.php** y escribimos el código:
 ~~~
 <?php 
@@ -124,7 +124,7 @@ Para probar el programa escribimos:
 console.log('Hola Mundo');
 ~~~
 >CTRL + D para salir del intérprete.
-## Ejecutar el programa
+## Script ejecutable
 1. Creamos un archivo de texto llamado **HolaMundo.js** y escribimos el código:
 ~~~
 console.log('Hola Mundo');
@@ -205,7 +205,7 @@ java HolaMundo
 ~~~
 > Nota: A la hora de ejecutar el programa tenemos que escribir el nombre de la clase para que se ejecute.
 >CTRL + D para salir del intérprete.
-## Ejecutar el programa
+## Script ejecutable
 1. Creamos un archivo de texto llamado **HolaMundo.java** y escribimos el código:
 ~~~
 class HolaMundo
@@ -278,7 +278,7 @@ o
 puts "Hola Mundo"
 ~~~~
 >CTRL + D para salir del intérprete.
-## Ejecutar el programa
+## Script ejecutable
 1. Creamos un archivo de texto llamado **HolaMundo.rb** y escribimos el código:
 ~~~
 print "Hola Mundo
@@ -311,7 +311,7 @@ chmod +x HolaMundo.rb
 ---
 # Go
 *"Hola Mundo"* en Javascript(nodejs).
-## Ejecutar el programa
+## Script ejecutable
 1. Creamos un archivo de texto llamado **HolaMundo.go** y escribimos el código:
 ~~~
 package main
@@ -337,7 +337,7 @@ go  run  hola.go
 ---
 # Rust
 *"Hola Mund"o* en Javascript(nodejs).
-## Ejecutar el programa
+## Script ejecutable
 1. Creamos un archivo de texto llamado **HolaMundo.rs** y escribimos el código:
 ~~~
 fn main() {
@@ -364,7 +364,7 @@ Para probar el programa escribimos:
 console.log('Hola Mundo');
 ~~~
 >CTRL + D para salir del intérprete.
-## Ejecutar el programa
+## Script ejecutable
 1. Creamos un archivo de texto llamado **HolaMundo.lisp** y escribimos el código:
 ~~~
 #!/usr/bin/env clisp
