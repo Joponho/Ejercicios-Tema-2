@@ -2,11 +2,11 @@
 
 ## Lenguaje C. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:
 
-Primero tenemos que crear los archivos, empezaremos con el *main.c*:
+1. Primero tenemos que crear los archivos, empezaremos con el *main.c*:
 ~~~~
 nano main.c
 ~~~~
-Le añadimos el código fuente al *main.c*:
+2. Le añadimos el código fuente al *main.c*:
 ~~~~
 #include <stdio.h>
 int suma (int a, int b);
@@ -18,27 +18,27 @@ printf("%d\n", suma (num1, num2) );
 return 0;
 }
 ~~~~
-Guardamos el main.c y creamos el siguiente que va a ser *suma.c*:
+3. Guardamos el main.c y creamos el siguiente que va a ser *suma.c*:
 ~~~~
 nano suma.c
 ~~~~
-Le añadimos el código fuente a la *suma.c*:
+4. Le añadimos el código fuente a la *suma.c*:
 ~~~~
 int suma (int a, int b) {
 return a + b;
 }
 ~~~~
-Guardamos la suma.c y creamos el último archivo *datos.c*:
+5. Guardamos la suma.c y creamos el último archivo *datos.c*:
 ~~~~
 nano datos.c
 ~~~~
-Le añadimos el código fuente a *datos.c*:
+6. Le añadimos el código fuente a *datos.c*:
 ~~~~
 char *mensaje="Hola a todos y todas";
 int num1 = 8;
 int num2 = 10;
 ~~~~
-Guardamos y compilamos los tres para obtener el código.
+7. Guardamos y compilamos los tres para obtener el código.
 Lo hacemos de la siguiente manera:
 ~~~~
 gcc -c main.c suma.c datos.c
