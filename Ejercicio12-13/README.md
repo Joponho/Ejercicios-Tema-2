@@ -41,6 +41,6 @@ int num2 = 10;
 Guardamos y compilamos los tres para obtener el código.
 Lo hacemos de la siguiente manera:
 ~~~~
-gcc -c main. suma.c datos.c
+gcc -c main.c suma.c datos.c
 ~~~~
 **Deberemos obtener 3 archivos: main.o, suma.o y datos.o**
