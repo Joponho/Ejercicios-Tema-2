@@ -206,22 +206,22 @@ java HolaMundo
 > Nota: A la hora de ejecutar el programa tenemos que escribir el nombre de la clase para que se ejecute.
 >CTRL + D para salir del intérprete.
 ## Script ejecutable
-1. Creamos un archivo de texto llamado **HolaMundo.java** y escribimos el código:
+Realmente no es un script, si no un bytecode empaquetado en JAR
+1. Empaquetamos:
+~~~~
+jar  cvfe  hola.jar  Hola  Hola.class
+~~~~
+> Nota: De forma habitual se suele ejecutar un archivo .jar de la siguiente forma.
+>> ~~~~
+>>java  -jar   hola.jar
+>>~~~~
+2. Damos permiso de ejecución:
+~~~~
+chmod  +x  hola.jar
+~~~~
+3. Ejecutamos:
 ~~~
-class HolaMundo
-{
-    public static void main(String[] args) {
-        System.out.println("Hola Mundo");
-    }
-}
-~~~
-2. Le damos los permisos al programa:
-~~~
-chmod +x HolaMundo.java
-~~~
-3. Abrimos el intérprete y ejecutamos el programa:
-~~~
-node ./Holamundo.java
+./hola.jar
 ~~~
 ---
 # Esamblador(nasm)
