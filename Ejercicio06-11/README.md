@@ -156,7 +156,7 @@ gcc -o HolaMundo HolaMundo.c
 ~~~
 3. Abrimos el intérprete y ejecutamos el programa:
 ~~~
-gcc ./Holamundo
+gcc ./HolaMundo
 ~~~
 > También podemos ejecutarlo sin abrir el programa.
 ---
