@@ -158,7 +158,7 @@ gcc -o HolaMundo HolaMundo.c
 ~~~
 gcc ./Holamundo
 ~~~
-< También podemos ejecutarlo sin abrir el programa.
+> También podemos ejecutarlo sin abrir el programa.
 ---
 # C++
 *Hola Mundo* en C++.
