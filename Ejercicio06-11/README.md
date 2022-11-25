@@ -154,9 +154,9 @@ return 0;
 ~~~
 gcc -o HolaMundo HolaMundo.c
 ~~~
-3. Abrimos el intérprete y ejecutamos el programa:
+3. Ejecutamos el programa:
 ~~~
-gcc ./HolaMundo
+./HolaMundo
 ~~~
 > También podemos ejecutarlo sin abrir el programa.
 ---
