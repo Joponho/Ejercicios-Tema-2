@@ -27,3 +27,7 @@ Los diferentes tipos de bibliotecas son:
 ### Desventajas  de las bibliotecas dinámicas:
 - Las actualizaciones de la biblioteca le afectan para bien y para mal.
 - El programa no es autocontenido.
+
+ ## Crea una biblioteca dinámica en C que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.
+ 
+
