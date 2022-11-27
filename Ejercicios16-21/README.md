@@ -29,5 +29,112 @@ Los diferentes tipos de bibliotecas son:
 - El programa no es autocontenido.
 
  ## Crea una biblioteca dinámica en C que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.
+Primero tenemos que crear tres archivos arimetica.c, aritmetica.h y main.c para el siguiente proceso.
+
+### Crear biblioteca dinámica
+1. Compilamos a código objeto dinámico:
+~~~~
+gcc  -c  -fPIC  aritmetica.c
+~~~~
+> Nota: se generara un archivo de código objeto **aritmetica.o**.
+2. Empaquetamos en biblioteca dinámica:
+~~~~
+gcc  -shared  -fPIC  -o  libaritmetica.so  aritmetica.o
+~~~~
+3. Instalamos biblioteca en el sistema:
+~~~~
+cp  libaritmetica.so  /lib
+~~~~
  
+### Crear ejecutable con enlace estático
+1. Compilamos y enlazamos.
+> Nota: con esto generamos un ejecutable  *main* y enlazamos con la con la biblioteca que creamos.
+~~~~
+gcc  -o  main  main.c  libaritmetica.so 
+~~~~
+
+2. Comprobamos:
+~~~~
+ldd  main
+~~~~
+## Crea una biblioteca dinámica en Java que proporciona las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.
+1. Creamos directorio aritmetica:
+~~~~
+mkdir aritmetica
+~~~~
+
+2. Creamos clase **aritmetica/Aritmetica.java**:
+~~~~
+package aritmetica;
+
+public class Aritmetica {
+
+  public static int suma (int sumando1, int sumando2) {
+        return (sumando1+sumando2);
+  }
+
+  public static int resta  (int minuendo, int sustraendo) {
+        return (minuendo-sustraendo);
+  }
+
+  public static int multiplicacion (int  numero1, int numero2) {
+        return (numero1*numero2);
+  }
+
+  public static float division (int dividendo, int divisor) {
+        return (dividendo/(float)divisor);
+  }
+
+}
+~~~~
+3. Compilamos:
+~~~~
+javac  aritmetica/Aritmetica.java
+~~~~
+> Nota: obtenemos como resultado *aritmetica/Aritmetica.class*.
+4. Creamos paquete jar:
+
+~~~~
+jar  cvf  aritmetica.jar  aritmetica/*.class
+~~~~
+5. Instalamos biblioteca en el sistema:
+
+~~~~
+mv  aritmetica.jar  /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/aritm.jar
+~~~~
+### Crear programa que usa la biblioteca
+1. Creamos un archivo main.java:
+~~~~
+import aritmetica.Aritmetica;
+
+public class Main {
+
+  private static final int NUM1 = 5;
+  private static final int NUM2 = 2;
+
+
+  public static void main (String[] args) {
+    System.out.println ("Dados los números " + NUM1 + " y " + NUM2 );
+    System.out.println ("La suma es " + Aritmetica.suma(NUM1, NUM2) );
+    System.out.println ("La resta es " + Aritmetica.resta(NUM1, NUM2) );
+    System.out.println ("La multiplicación es " + Aritmetica.multiplicacion(NUM1, NUM2) );
+    System.out.println ("La división es " + Aritmetica.division(NUM1, NUM2) );
+  }
+
+
+}
+~~~~
+2. Compilamos:
+
+~~~~
+javac  Main.java
+~~~~
+> Nota: Obtenemos un archivo *Main.class*.
+
+3. Ejecutamos:
+~~~~
+java  Main
+~~~~
+
+
 
