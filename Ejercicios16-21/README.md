@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo ejecutable para código fuente en C con make. Haz uso de un buildfile
-=======
+
 # Bibliotecas
 ## Define qué se entiende por biblioteca o librería y los tipos que existen.
 Las bibliotacas son espacios dpnde se guardan archivos que posteriormente utilizan los programadores para ejecutar un programa. Hay diferentipos de bibliotecas; estas se usan dependiendo del programa o aplicación que se busque desarollar.
@@ -139,6 +137,3 @@ javac  Main.java
 java  Main
 ~~~~
 
-
-
->>>>>>> f07a4620b2a0a385f91b6f968c1565e2fb4445b5
