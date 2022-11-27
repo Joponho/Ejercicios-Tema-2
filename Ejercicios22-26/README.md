@@ -186,3 +186,420 @@ Para este ejericcio necesitaremos los siguientes programas:
 </project>
 
 ~~~~
+
+1. Ejecutamos el ant:
+~~~~
+ant
+~~~~
+Tambien obtenemos:
+~~~~
+Buildfile: /home/jose/Proyectos/DAW1-ED-Bibliotecas/java/build.xml
+
+init:
+    [mkdir] Created dir: /home/jose/Proyectos/DAW1-ED-Bibliotecas/java/build/classes
+    [mkdir] Created dir: /home/jose/Proyectos/DAW1-ED-Bibliotecas/java/build/jar
+
+compile:
+    [javac] Compiling 2 source files to /home/jose/Proyectos/DAW1-ED-Bibliotecas/java/build/classes
+
+jar:
+      [jar] Building jar: /home/jose/Proyectos/DAW1-ED-Bibliotecas/java/build/jar/programa.jar
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+~~~~
+Luego para ejecutar escribimos:
+~~~~
+ant run
+~~~~
+# Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazadoy la generación del archivo .jar para código fuente en Java con Maven. Haz uso de un buildfile.
+1. Lo primero que haremos será entrar en la carpeta para el proyecto:
+
+~~~~
+cd  ~/Proyectos
+~~~~
+2. Creamos la estructura de carpetas con maven:
+
+~~~~
+mvn  archetype:generate  -DgroupId=com.miempresa.app  -DartifactId=mi-app  -Dversion=1.0.0 \
+       -DarchetypeArtifactId=maven-archetype-quickstart  -DinteractiveMode=false
+~~~~
+3. Entramos en el direcotio *mi-app*:
+~~~~
+cd mi-app
+~~~~
+4. Creamos 2 clases dentro de la ruta src/main/java/com/miempresa/app:
+~~~~
+nano  src/main/java/com/miempresa/app/App.java
+~~~~
+Con el siguiente código:
+~~~~
+package com.miempresa.app;
+
+public class App {
+
+  private static final int NUM1 = 5;
+  private static final int NUM2 = 2;
+
+
+  public static void main (String[] args) {
+    System.out.println ("Dados los números " + NUM1 + " y " + NUM2 );
+    System.out.println ("La suma es " + Aritmetica.suma(NUM1, NUM2) );
+    System.out.println ("La resta es " + Aritmetica.resta(NUM1, NUM2) );
+    System.out.println ("La multiplicación es " + Aritmetica.multiplicacion(NUM1, NUM2) );
+    System.out.println ("La división es " + Aritmetica.division(NUM1, NUM2) );
+  }
+}
+~~~~
+La segunda clase:
+~~~~
+nano  src/main/java/com/miempresa/app/Aritmetica.java
+~~~~
+Con el siguiente código:
+~~~~
+package com.miempresa.app;
+
+public class Aritmetica {
+
+  public static int suma (int sumando1, int sumando2) {
+        return (sumando1+sumando2);
+  }
+
+  public static int resta  (int minuendo, int sustraendo) {
+        return (minuendo-sustraendo);
+  }
+
+  public static int multiplicacion (int  numero1, int numero2) {
+        return (numero1*numero2);
+  }
+
+  public static float division (int dividendo, int divisor) {
+        return (dividendo/(float)divisor);
+  }
+
+}
+~~~~
+5. Creamos otras 2 clases dentro de la ruta src/test/java/com/miempresa/app:
+~~~~
+nano  src/test/java/com/miempresa/app/AppTest.java
+~~~~
+Con el siguiente código:
+~~~~
+package com.miempresa.app;
+
+public class Aritmetica {
+
+  public static int suma (int sumando1, int sumando2) {
+        return (sumando1+sumando2);
+  }
+
+  public static int resta  (int minuendo, int sustraendo) {
+        return (minuendo-sustraendo);
+  }
+
+  public static int multiplicacion (int  numero1, int numero2) {
+        return (numero1*numero2);
+  }
+
+  public static float division (int dividendo, int divisor) {
+        return (dividendo/(float)divisor);
+  }
+
+}
+~~~~
+La segunda clase:
+~~~~
+nano  src/test/java/com/miempresa/app/AritmeticaTest.java
+~~~~
+Con el siguiente código:
+~~~~
+package com.miempresa.app;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class AritmeticaTest {
+
+    @Test
+    public void testSuma() {
+        assertEquals("Suma (2,3) = 5", 5, Aritmetica.suma(2,3));
+    }
+}
+~~~~
+6. Editamos el archivo que estaba ya dentro del dierctorio mi-app antes de crear las clases pom.xml:
+~~~~
+nano  pom.xml
+~~~~
+~~~~
+<project>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.miempresa.app</groupId>
+  <artifactId>mi-app</artifactId>
+  <version>1.0.0</version>
+  <name>mi-app</name>
+
+  <build>
+    <plugins>
+      <plugin>
+        <!-- Para construir un JAR ejecutable -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+          <archive>   
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>./</classpathPrefix>
+              <mainClass>com.miempresa.app.App</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <!-- Para ejecutar el JAR creado --> 
+        <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>1.2.1</version>
+          <configuration>
+            <mainClass>com.miempresa.app.App</mainClass>
+          </configuration>
+       </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <!-- Prueba de unidades -->
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>
+
+~~~~
+7. Para compilar hacemos:
+~~~~
+mvn  compile
+~~~~
+> Nota: Obtenemos en la carpeta target/classes el bytecode.
+Podemos ejecutar el bytecode de la siguiente manera:
+~~~~
+cd target/classes  &&  java com.miempresa.app.App  &&  cd ../..
+~~~~
+8. Para empaquetar en .jar hacemos lo siguiente:
+~~~~
+mvn  package
+~~~~
+Para ejecutar el jar hacemos:
+~~~~
+mvn  exec:java
+~~~~
+Otra forma de ejecutar el .jar es:
+~~~~
+java  -jar  target/mi-app-1.0.0.jar
+~~~~
+# Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo .jar para código fuente en Java con Gradle. Haz uso de un buildfile
+1. Entramos en la carpeta que tenemos para proyectos:
+~~~~
+cd  ~/Proyectos
+~~~~
+2. Creamos una nueva carpeta llamada miapp y entramos en ella:
+~~~~
+mkdir  miapp  &&  cd  miapp
+~~~~
+3. Creamos la estructura de carpetas con gradle:
+~~~~
+gradle  init  --type  java-application
+~~~~
+4. Vemos que se crea la estructura y un *buildfile* llamado **build.gradle**
+~~~~
+tree    
+
+.
+├── build.gradle
+├── gradle    
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradlew
+├── gradlew.bat
+├── settings.gradle
+└── src
+    ├── main
+    │   └── java  
+    │       └── App.java
+    └── test
+        └── java
+            └── AppTest.java
+~~~~
+5. Generamos el codigo fuente y borramos las clases que vienen por defecto:
+~~~~
+rm  src/main/java/App.java  src/test/java/AppTest.java
+~~~~
+Creamos 2 clases dentro de la ruta src/main/java:
+~~~~
+nano  src/main/java/Main.java
+~~~~
+Y su respectivo código:
+~~~~
+public class Main {
+
+  private static final int NUM1 = 5;
+  private static final int NUM2 = 2;
+
+
+  public static void main (String[] args) {
+    System.out.println ("Dados los números " + NUM1 + " y " + NUM2 );
+    System.out.println ("La suma es " + Aritmetica.suma(NUM1, NUM2) );
+    System.out.println ("La resta es " + Aritmetica.resta(NUM1, NUM2) );
+    System.out.println ("La multiplicación es " + Aritmetica.multiplicacion(NUM1, NUM2) );
+    System.out.println ("La división es " + Aritmetica.division(NUM1, NUM2) );
+  }
+}
+~~~~
+La segunda clase:
+~~~~
+nano  src/main/java/Aritmetica.java
+~~~~
+Y su respectivo código:
+~~~~
+public class Aritmetica {
+
+  public static int suma (int sumando1, int sumando2) {
+        return (sumando1+sumando2);
+  }
+
+  public static int resta  (int minuendo, int sustraendo) {
+        return (minuendo-sustraendo);
+  }
+
+  public static int multiplicacion (int  numero1, int numero2) {
+        return (numero1*numero2);
+  }
+
+  public static float division (int dividendo, int divisor) {
+        return (dividendo/(float)divisor);
+  }
+
+}
+~~~~
+Creamos 2 clases de test dentro de la ruta src/test/java:
+~~~~
+nano  src/test/java/MainTest.java
+~~~~
+Y su respectivo código:
+~~~~
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class MainTest {
+
+  @Test
+  public void testMain() {
+      // Prueba vacía
+  }
+}
+~~~~
+La segunda clase
+~~~~
+nano  src/test/java/AritmeticaTest.java
+~~~~
+~~~~
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class AritmeticaTest {
+    
+    @Test 
+    public void testSuma() {
+        assertEquals("Suma (2,3) = 5", 5, Aritmetica.suma(2,3));
+    }
+
+}
+~~~~
+6. Editamos el archivo build.gradle:
+~~~~
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    jcenter()  
+}
+
+dependencies {
+    compile 'com.google.guava:guava:23.0' 
+    testCompile 'junit:junit:4.12'         
+}
+
+jar {
+    manifest {
+       attributes ('Main-Class': 'Main')
+    }
+}
+
+mainClassName = 'Main'
+~~~~
+7. Compilamos:
+~~~~
+./gradlew  assemble
+~~~~
+En la carpeta build/classes obtendremos el bytecode correspondiente a cada clase.
+Para ejecutar el bytecode hacemos:
+~~~~
+cd build/classes/main  &&  java Main  &&  cd ../../..
+8. El archivo .jar se ha guardado en la carpeta build/libs. Para ejecutarlo escribimos:
+~~~~
+./gradlew  run
+~~~~
+Otra forma de ejecutarlo es:
+~~~~
+java  -jar  build/libs/miapp.jar
+~~~~
+9. Para ejecutar las pruebas:
+~~~~
+./gradlew  test
+~~~~
+Luego podemos ver el informe de las pruebas con :
+~~~~
+firefox build/reports/tests/test/index.html
+~~~~
+# Automatiza el proceso de compilación de ejecutable y bibliotecas, su enlazado y la generación del archivo ejecutable para código fuente en C++. Crea un buildfile con CMake.
+1. Entramos en la carpeta proyectos:
+~~~~
+cd Proyectos
+~~~~
+2. Descargamos el código fuente
+~~~~
+git clone *"tu repositorio de github"*
+~~~~
+3. Entramos en el directorio:
+~~~~
+cd Directorio.cpp
+~~~~
+3. Creamos un directoro de construccón y entramos en el:
+~~~~
+mkdir  build  &&  cd  build
+~~~~
+4. Generamos el archivo *Makefile*, el ejecutable y las bibliotecas:
+~~~~
+cmake  ..
+~~~~
+> Nota: *".."* indica el Directorio padre.
+5. Comprobamos que se creo el **"Makefile"**:
+~~~~
+ls 
+cat Makefile
+~~~~
+6. Ahora podemos realizar el proceso de construcción con el comando make:
+~~~~
+make
+~~~~
+7. Para realizar la instalación hacemos:
+~~~~
+sudo  make  install
+~~~~
