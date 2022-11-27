@@ -552,6 +552,7 @@ En la carpeta build/classes obtendremos el bytecode correspondiente a cada clase
 Para ejecutar el bytecode hacemos:
 ~~~~
 cd build/classes/main  &&  java Main  &&  cd ../../..
+~~~~
 8. El archivo .jar se ha guardado en la carpeta build/libs. Para ejecutarlo escribimos:
 ~~~~
 ./gradlew  run
